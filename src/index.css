@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; */
+    width: 100%;
+    font-family:  tahoma;
+    overflow-x: hidden;
+    /* background: #F4F8F5; */
+}

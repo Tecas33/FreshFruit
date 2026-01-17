@@ -85,60 +85,95 @@ export const Call = styled.a`
 
 // Hero-section
 
-export const HeroS = styled.div `
-   background-image: url('/img/fundo2.jpg');
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   height: 90vh;
-   width: 100%;
+export const HeroS = styled.section`
+  background-image: url('/img/fundo2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
-`
+  min-height: 90vh;
+  width: 100%;
 
-export const Maintexto = styled.div `
-   position: relative;
-   left: 10rem ;
-   top: 13rem;
+  display: flex;
+  align-items: center;
+`;
 
-   
-`
 
-export const Texto = styled.div `
+export const Maintexto = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 
-  h2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Desktop spacing */
+  gap: 2rem;
+
+  /* 📱 Mobile */
+  @media (max-width: 930px) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+`;
+
+
+export const Texto = styled.div`
+  max-width: 600px;
+
+  h2 {
     font-size: 40px;
+    line-height: 1.2;
   }
 
-  p{
+  p {
     margin-top: 1rem;
+    font-size: 1rem;
   }
 
+  @media (max-width: 930px) {
+    h2 {
+      font-size: 2.2rem;
+    }
 
+    p {
+      font-size: 1rem;
+    }
+  }
+`;
 
-`
-export const ButtonFull = styled.button `
-   margin-top: 10px;
-   padding: 10px 3rem 10px 3rem;
-   border: 2px solid #06d95a;
-   transition: all.5s;
-   
+export const ButtonFull = styled.button`
+  margin-top: 1rem;
+  padding: 10px 3rem;
+  border: 2px solid #06d95a;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
 
-   a{
+  a {
     text-decoration: none;
     color: #06d95a;
     font-weight: bold;
-   }
+  }
 
-   a:hover{
-    color: #fff;
-    
-   }
-
-   &:hover{
+  &:hover {
     background-color: #06d95a;
     border-radius: 7px;
-   }
-`
+  }
+
+  &:hover a {
+    color: #fff;
+  }
+
+  @media (max-width: 930px) {
+    width: 100%;
+    max-width: 280px;
+  }
+`;
+
 
 
 export const CardMain = styled.div ` 
